@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragment.html :: head('Home')"></head>
+<body>
+
+<section th:include="fragment.html :: navbar"></section>
+<h1>Home Page</h1>
+
+<form  method="post" >
+    <label for="productCount">Mahsulot sonini kitiring:</label>
+    <input type="number" id="productCount" name="productCount"><br><br>
+    <label for="priceOfOne">Birlik bahosini kiriting(UZS):</label>
+    <input type="number" id="priceOfOne" name="priceOfOne"><br><br>
+    <label for="totallyPrice">Mahsulotning Umumiy narxi:</label>
+    <input type="number"  id="totallyPrice" name="totallyPrice"><br><br>
+    <label for="privilegePeriod">Imtiyoz davri(oy):</label>
+    <input type="number" id="privilegePeriod" name="privilegePeriod"><br><br>
+    <label for="entryDate">Mahsulot kirish sanasi:</label>
+    <input type="date" id="entryDate" name="entryDate"><br><br>
+    <label for="returnDeadline">Mahsulot chiqish sanasi:</label>
+    <input type="date" id="returnDeadline" name="returnDeadline"><br><br>
+    <label for="returnPeriod">Qaytarish muddati(nechi oyda?)</label>
+    <input type="number" id="returnPeriod" name="returnPeriod"><br><br>
+    <label for="returnPrice">Qaytarish summasi(monthly):</label>
+    <input type="number" id="returnPrice" name="returnPrice"><br><br>
+
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
